@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>double-tapped-brewery-menu</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+	<section class="navigation">
+	<!--Desktop Navigation-->
+		<div class="desktop-nav">
+			<div class="nav-container">
+				<div class="nav-logo">
+					<img id="logo-img" src="double-tapped-brewery-logo.jpg" alt="logo">
+				</div>
+				<div class="nav-menu">
+					<button id="home">Home</button>
+					<button id="our-beer">Our Beer</button>
+					<button class="active" id="menu">Menu</button>
+					<button id="events">Events</button>
+				</div>
+				<div class="shopping-cart"><i class="material-icons" style="font-size: 40px;">&#xe8cc;</i></div>
+			</div>
+		</div>
+	<!--Mobile Navigation-->
+		<div class="mobile-nav">
+			<div class="mobile-nav-container">
+				<div class="hamburger-bg">
+				</div>
+				<div class="hamburger-icon">
+					<div id="hamburger-open-icon"><i class="material-icons" style="font-size: 40px;">&#xe5d2;</i></div>
+					<div id="hamburger-close-icon"><i class="material-icons" style="font-size: 40px;">&#xe5cd;</i></div>
+				</div>
+				<div class="hamburger-list">
+					<ul>
+						<li id="m-home">Home</li>
+						<li id="m-our-beer">Our Beer</li>
+						<li class="m-active" id="m-menu">Menu</li>
+						<li id="m-events">Events</li>
+					</ul>
+				</div>
+				<div class="m-shopping-cart"><i class="material-icons" style="font-size: 40px;">&#xe8cc;</i></div>
+			</div>
+		</div>
+	</section>
+	<section class="section-1 parallax">
+		<div class="hero-overlay-container"></div>
+		<div class="hero-text-container">
+			<h1>Lunch Menu</h1>
+			<p>Order online and have it delivered right to your doorstep!</p>
+			<button class="btn-style-1" id="order-online-btn">Order Online</button>
+		</div>
+	</section>
+	<section class="section-2">
+		<div class="menu-container">
+			<div class="burger-container">
+				<h2>Burgers</h2>
+				<p class="orange-text uppercase extra bold">All burgers come with fries.</p>
+				<div class="burger-flex-container flex">
+				<!--The OG Burger-->
+					<div id="og-burger">
+						<h3>The OG Burger <span class="orange-dot">&bull;</span> 11.00</h3>
+						<p>Ten ounces of angus beef, topped with pepper jack cheese, red onions, spinach, and a house-made guacamole on a home-baked roll.</p>
+					</div>
+				<!--Double Tapped Burger-->
+					<div id="double-tapped-burger">
+						<h3>Double Tapped Burger <span class="orange-dot">&bull;</span> 11.00</h3>
+						<p>Our famous flame-grilled, ten ounce angus burger topped with caramelized onions, cheddar cheese, portobello mushroom, lettuce, and tomato.</p>
+					</div>
+				<!--Sizzling Bacon Burger-->
+					<div id="sizzling-bacon-burger">
+						<h3>Sizzling Bacon Burger <span class="orange-dot">&bull;</span> 10.00</h3>
+						<p>Ten ounce angus beef burger, topped with cheddar cheese, hickory-smoked bacon, and a smoky barbecue sauce.</p>
+					</div>
+				<!--Holy Cheese Burger-->
+					<div id="holy-cheese-burger">
+						<h3>Holy Cheese Burger <span class="orange-dot">&bull;</span> 9.00</h3>
+						<p>The classic ten ounce angus beef burger, topped with onion, lettuce, tomato, and up to THREE cheeses of your choosing!</p>
+					</div>
+				<!--Veggie Burger-->
+					<div id="veggie-burger">
+						<h3>Veggie Burger <span class="orange-dot">&bull;</span> 8.00</h3>
+						<p>A delicious, soy, boca patty, served on a freshly toasted, whole-wheat bun.</p>
+					</div>
+				<!--Cajun Chicken Burger-->
+					<div id="cajun-chicken-burger">
+						<h3>Cajun Chicken Burger <span class="orange-dot">&bull;</span> 8.00</h3>
+						<p>Cajun chicken breast with lettuce and tomato on a freshly toasted bun.</p>
+					</div>
+				</div>
+			</div>
+			<div class="salad-container">
+				<h2>Salads</h2>
+				<div class="salad-flex-container flex">
+				<!--BBQ Chicken Salad-->
+					<div id="bbq-chicken-salad">
+						<h3>BBQ Chicken Salad <span class="orange-dot">&bull;</span> 11.00</h3>
+						<p>Crisp romaine, grilled chicken, sweet corn, mozzarella, tomatoes, green onions, BBQ ranch dressing, hickory-smoked BBQ sauce, and crispy onion strings.</p>
+					</div>
+				<!--Super Kale Salad-->
+					<div id="super-kale-salad">
+						<h3>Super Kale Salad <span class="orange-dot">&bull;</span> 10.00</h3>
+						<p>Baby kale, romaine, fresh blueberries, sweet red grapes, dried cranberries, goat cheese crumbles, cucumbers, candied pecans, toasted pepitas, red onions, and strawberry vinaigrette.</p>
+					</div>
+				<!--Santa Fe Salad-->
+					<div id="santa-fe-salad">
+						<h3>Santa Fe Salad <span class="orange-dot">&bull;</span> 11.00</h3>
+						<p>Crisp romaine, blackened chicken breast, red onions, fire-roasted red peppers, jack + cheddar cheese, avocado, sweet corn, tomatoes, crispy corn tortilla strips, and santa fe dressing.</p>
+					</div>
+				<!--Caesar Salad-->
+					<div id="caesar-salad">
+						<h3>Caesar Salad <span class="orange-dot">&bull;</span> 9.00</h3>
+						<p>Crisp romaine, oven-baked croutons, parmesan cheese, and a creamy caesar dressing.</p>
+					</div>
+				</div>
+			</div>
+			<div class="dessert-container">
+				<h2>Desserts</h2>
+				<div class="dessert-flex-container flex">
+				<!--BBQ Chicken Salad-->
+					<div id="new-york-cheesecake">
+						<h3>New York Cheesecake <span class="orange-dot">&bull;</span> 6.00</h3>
+						<p>New York styled cheesecake topped with a strawberry drizzle.</p>
+					</div>
+				<!--Super Kale Salad-->
+					<div id="choco-churros">
+						<h3>Choco Churros <span class="orange-dot">&bull;</span> 4.00</h3>
+						<p>Cinnamon and sugar covered churros with dark chocolate truffle sauce for dipping.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="footer">
+		<div class="footer-flex-container">
+		<!--Contact Info-->
+			<div id="contact-info">
+				<h4 class="orange-text uppercase bold">Contact Info</h4>
+				<p id="contact-email">info@doubletappedbrewery.com</p>
+				<p id="contact-phone">804 - 123 - 4567</p>
+			</div>
+		<!--Join the Party - (email sign up)-->
+			<div id="party">
+				<h4 class="orange-text uppercase bold">Join the Party!</h4>
+				<div class="input-container">
+					<input id="party-input" type="text" placeholder="email@address.com">
+					<button id="join-btn">Join</button>
+				</div>
+			</div>
+		<!--Taproom Hours-->
+			<div id="hours">
+				<h4 class="orange-text uppercase bold">Taproom Hours</h4>
+				<p id="mon-thurs-hours">Monday - Thursday: 3:00PM - 9:00PM</p>
+				<p id="fri-sun-hours">Friday - Sunday: 1:00PM - 11:00PM</p>
+			</div>
+		</div>
+	<!--Copyright Text-->
+		<p class="orange-text uppercase" id="copyright-text">&copy;Double Tapped Brewery 2021</p>
+	</section>
+<script src="script.js"></script>
+</body>
+</html>

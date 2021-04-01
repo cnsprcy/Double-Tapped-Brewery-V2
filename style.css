@@ -1,0 +1,334 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:wght@400;700&display=swap');
+/* CSS Document */
+
+* {
+	cursor: default;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1, h2, h3 {
+	font-family: 'Luckiest Guy', cursive;
+	letter-spacing: 1.25px;
+}
+
+h4, li, p {
+	font-family: 'Roboto', sans-serif;
+}
+
+li, p {
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 0.25px;
+}
+
+button {
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.desktop-nav {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.nav-container {
+	width: 100%;
+}
+
+#logo-img {
+	margin-left: 50px;
+	width: auto;
+	height: 100px;
+}
+
+.nav-menu {
+	position: absolute;
+	margin: 35px 0px;
+	top: 0px;
+	left: 50%;
+	transform: translate(-50%, 0%);
+}
+
+.nav-menu .active {
+	background-color: #ED7744;
+	border-color: #ED7744;
+}
+
+.nav-menu button {
+	background-color: #000;
+	color: #FFF;
+	border: 2px solid #000;
+	border-radius: 25px;
+	margin: 0 10px;
+	width: 125px;
+	height: 35px;
+	transition: 0.3s;
+}
+
+.nav-menu button:hover {
+	background-color: #F2A17E;
+	border-color: #F2A17E;
+}
+
+.shopping-cart i {
+	cursor: pointer;
+	position: absolute;
+	margin-top: 50px;
+	top: -20px;
+	right: 50px;
+}
+
+.shopping-cart i:hover {
+	color: #F2A17E;
+}
+
+.mobile-nav {
+	display: none;
+}
+
+.hamburger-bg {
+	position: fixed;
+	background-color: #FFF;
+	box-shadow: 0 5px 8px 0 rgba(0,0,0,0.25);
+	width: 100%;
+	height: 75px;
+}
+
+.hamburger-icon i {
+	position: fixed;
+	left: 50px;
+	top: 20px;
+	z-index: 9000;
+}
+
+.m-shopping-cart {
+	position: fixed;
+	right: 50px;
+	top: 20px;
+	z-index: 9000;
+}
+
+#hamburger-close-icon {
+	display: none;
+}
+
+#hamburger-open-icon i:hover, #hamburger-close-icon i:hover, .m-shopping-cart:hover {
+	color: #F2A17E;
+}
+
+.hamburger-list {
+	display: none;
+	background-color: #FFF;
+	box-shadow: 0 5px 8px 0 rgba(0,0,0,0.25);
+	position: fixed;
+	padding: 50px 0;
+	width: 100%;
+	top: 0px;
+	text-align: center;
+}
+
+.hamburger-list li {
+	margin: 10px;
+	padding: 10px 0;
+	transition: 0.3s;
+}
+
+.hamburger-list li:hover {
+	color: #F2A17E;
+	letter-spacing: 2px;
+}
+
+.section-1 {
+	width: 100%;
+	height: auto;
+}
+
+.parallax {
+	background-image: url("unsplash-burgers.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: auto;
+	min-height: 500px;
+}
+
+.hero-text-container {
+	padding: 100px 0px;
+	width: 100%;
+	height: 500px;
+	text-align: center;
+}
+
+h1 {
+	color: #FFF;
+	font-size: 80px;
+	text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.hero-text-container p {
+	color: #FFF;
+	text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+#order-online-btn {
+	background-color: #ED7745;
+	color: #FFF;
+	border: 2px solid #ED7745;
+	border-radius: 25px;
+	box-shadow: 0 0 8px 0 rgba(0,0,0,0.5);
+	width: 200px;
+	height: 30px;
+	margin: 150px 0 100px 0;
+}
+
+#order-online-btn:hover {
+	background-color: #F2A17E;
+	border-color: #F2A17E;
+}
+
+.section-2 {
+	background-color: #F5F5F6;
+	width: 100%;
+	height: auto;
+}
+
+.menu-container {
+	padding: 25px 80px 50px 80px;
+	width: 100%;
+	height: auto;
+}
+
+h2 {
+	margin: 25px 25px 10px 25px;
+	font-size: 50px;	
+}
+
+.orange-text {
+	color: #ED7745;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.extra {
+	margin: 0 25px;
+}
+
+.orange-dot {
+	color: #ED7745;
+}
+
+h3 {
+	margin: 10px 0;
+	font-size: 25px;
+}
+
+.flex {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.flex div {
+	margin: 10px 0;
+	padding: 0 25px;
+	width: 50%;
+}
+
+.footer {
+	background-color: #2F2E2E;
+	color: #FFF;
+	padding: 50px;
+	width: 100%;
+	height: auto;
+}
+
+.footer-flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+h4 {
+	margin-bottom: 10px;
+}
+
+.footer div {
+	width: 100%;
+	text-align: center;
+	line-height: 40px;
+}
+
+#contact-email, #contact-phone {
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#contact-email:hover, #contact-phone:hover {
+	color: #ED7745;
+}
+
+#party-input {
+	border: 2px solid #ED7745;
+	border-radius: 25px 0 0 25px;
+	padding: 0 10px;
+	width: 75%;
+	height: 30px;
+	font-size: 18px;
+}
+
+#join-btn {
+	background-color: #ED7745;
+	color: #FFF;
+	border: 2px solid #ED7745;
+	border-radius: 0 25px 25px 0;
+	margin-left: -4px;
+	width: 20%;
+	height: 30px;
+}
+
+#join-btn:hover {
+	background-color: #F2A17E;
+	border-color: #F2A17E;
+}
+
+#copyright-text {
+	color: #ED7745;
+	margin-top: 25px;
+	font-size: 15px;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+
+@media (max-width: 1184px) {
+	.nav-menu button { margin: 0; }
+}
+
+@media (max-width: 1050px) {
+	.desktop-nav { display: none; }
+	.mobile-nav { display: block; }
+	.m-active { color: #ED7745; }
+	.hero-text-container { padding-top: 150px; }
+	.flex { flex-flow: column nowrap; }
+	h2, h3, p { text-align: center; }
+	.flex div { padding: 0; width: 100%; }
+	.footer-flex-container { flex-flow: column nowrap; }
+	.footer-flex-container :nth-child(1) { order: 2; }
+	.footer-flex-container :nth-child(2) { order: 1; }
+	.footer-flex-container :nth-child(3) { order: 3; }
+	.footer div { margin: 0 0 20px 0; }
+	#party-input { width: 50%; }
+	#join-btn { width: 20%; }
+}
